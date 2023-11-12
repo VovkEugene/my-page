@@ -1,0 +1,74 @@
+:root {
+  --accent-color: #1bff07;
+  --text-color: #fff;
+  --background-color: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #333;
+  color: var(--text-color);
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+[class*="__container"] {
+  width: 1440px;
+  margin: 0 auto;
+}
+/* ------------------------------header--------------------------- */
+.header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 125px 0;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  height: 39px;
+  margin-top: 3px;
+  padding: 0 12px 0 9px;
+  border-radius: 100px;
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 42.414px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -4.666px;
+  text-transform: uppercase;
+}
+.header_menu {
+}
+.header__list {
+  display: flex;
+}
+.header__list > *:not(:last-child) {
+  margin-right: 50px;
+}
+.header__item {
+}
+.header__link {
+}
+/* -------------------------------main---------------------------- */
+.main {
+  flex: 1 1 auto;
+}
+/* ------------------------------footer--------------------------- */
+.footer {
+}
