@@ -22,6 +22,12 @@ body {
   margin: 0 auto;
   border: 1px solid red;
 }
+.title {
+  margin-bottom: 40px;
+  font-size: 55px;
+  line-height: normal;
+  letter-spacing: -1.65px;
+}
 /* ------------------------------header--------------------------- */
 .header {
   position: absolute;
@@ -119,10 +125,6 @@ body {
   padding: 0 125px;
 }
 .projects__title {
-  margin-bottom: 40px;
-  font-size: 55px;
-  line-height: normal;
-  letter-spacing: -1.65px;
 }
 .projects__list {
   margin-bottom: 80px;
@@ -174,6 +176,75 @@ body {
   border: 1px solid var(--accent-color);
   background: var(--background-color);
   color: var(--accent-color);
+}
+/* ----------------------------competences------------------------ */
+.competences {
+}
+.competences__container {
+  padding: 0 125px;
+}
+.competences__title {
+  margin-bottom: 104px;
+}
+.competences__list {
+}
+.competences__list > *:not(:last-child) {
+  /* margin-bottom: 60px; */
+  margin-bottom: 120px;
+}
+.competences__item {
+}
+.item-competences {
+}
+.item-competences__title {
+  position: relative;
+  margin-bottom: 15px;
+  color: #1bff07;
+  font-size: 35px;
+  line-height: normal;
+  letter-spacing: -1.05px;
+}
+.item-competences:nth-child(1) .item-competences__title::before {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  bottom: 58px;
+  left: 0;
+  content: "";
+  background-image: url("../img/decor/competences/01.svg");
+}
+.item-competences:nth-child(2) .item-competences__title::before {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  bottom: 58px;
+  left: 0;
+  content: "";
+  background-image: url("../img/decor/competences/02.svg");
+}
+.item-competences:nth-child(3) .item-competences__title::before {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  bottom: 58px;
+  left: 0;
+  content: "";
+  background-image: url("../img/decor/competences/03.svg");
+}
+.item-competences:nth-child(4) .item-competences__title::before {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  bottom: 108px;
+  left: 0;
+  content: "";
+  background-image: url("../img/decor/competences/04.svg");
+}
+.item-competences__text {
+  width: 778px;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
 }
 /* ------------------------------footer--------------------------- */
 .footer {
