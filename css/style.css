@@ -9,7 +9,7 @@ html {
 body {
   height: 100vh;
   font-family: "IBM Plex Mono", monospace;
-  background-color: #333;
+  background-color: var(--background-color);
   color: var(--text-color);
 }
 .wrapper {
@@ -29,7 +29,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 99;
 }
 .header__container {
   display: flex;
@@ -65,10 +65,20 @@ body {
 .header__item {
 }
 .header__link {
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: lowercase;
+}
+.header__link:hover {
+  color: var(--accent-color);
 }
 /* -------------------------------main---------------------------- */
 .main {
   flex: 1 1 auto;
+}
+.main > * {
+  margin-bottom: 150px;
 }
 /* -------------------------------hero---------------------------- */
 .hero {
@@ -83,12 +93,12 @@ body {
 }
 .hero__body {
   position: relative;
+  padding-left: 119px;
 }
 .hero__text {
   position: absolute;
   width: 430px;
   bottom: 328px;
-  left: 119px;
   font-size: 20px;
   line-height: normal;
   letter-spacing: -0.6px;
@@ -97,11 +107,73 @@ body {
   position: absolute;
   width: 919px;
   bottom: 94px;
-  left: 119px;
   color: #1bff07;
   font-size: 80px;
   line-height: 87.5%;
   letter-spacing: -2.4px;
+}
+/* ----------------------------projects--------------------------- */
+.projects {
+}
+.projects__container {
+  padding: 0 125px;
+}
+.projects__title {
+  margin-bottom: 40px;
+  font-size: 55px;
+  line-height: normal;
+  letter-spacing: -1.65px;
+}
+.projects__list {
+  margin-bottom: 80px;
+}
+.list-projects {
+}
+.list-projects__item {
+}
+.list-projects__link {
+}
+.list-projects__link img {
+  border-radius: 30px;
+  width: 100%;
+}
+.list-projects__body {
+  position: relative;
+  padding-left: 50px;
+}
+.list-projects__title {
+  position: absolute;
+  bottom: 94px;
+  font-size: 35px;
+  line-height: normal;
+  letter-spacing: -1.05px;
+}
+.list-projects__text {
+  position: absolute;
+  bottom: 50px;
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+.projects__button {
+  display: block;
+  width: 580px;
+  height: 151px;
+  padding: 56px 85px 58px 86px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  background: var(--accent-color);
+  color: var(--background-color);
+  text-align: center;
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  transition: all 0.3s ease 0s;
+}
+.projects__button:hover {
+  border: 1px solid var(--accent-color);
+  background: var(--background-color);
+  color: var(--accent-color);
 }
 /* ------------------------------footer--------------------------- */
 .footer {
