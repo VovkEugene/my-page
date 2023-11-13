@@ -251,6 +251,7 @@ body {
 .helper {
 }
 .helper__container {
+  padding: 0 125px;
 }
 .helper__title {
   width: 404px;
@@ -292,6 +293,48 @@ body {
   font-size: 22px;
   line-height: normal;
   letter-spacing: -0.66px;
+}
+/* ----------------------------contacts--------------------------- */
+.contacts {
+}
+.contacts__container {
+  height: 717px;
+  padding: 0 125px;
+  border-radius: 30px;
+  background: var(--background-color2) url("../img/content/contacts/cuate.svg")
+    right no-repeat;
+  position: relative;
+}
+.contacts__column {
+  position: absolute;
+  bottom: 89px;
+  left: 125px;
+}
+.contacts__title {
+  margin-bottom: 28px;
+  font-size: 35px;
+  line-height: 171.429%;
+  letter-spacing: -1.05px;
+}
+.contacts__list {
+}
+.contacts__item {
+}
+.item-contact {
+}
+.item-contact:not(:last-child) {
+  margin-bottom: 20px;
+}
+.item-contact__social {
+}
+.item-contact__link {
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -1.8px;
+  transition: all 0.3s ease 0s;
+}
+.item-contact__link:hover {
+  color: var(--accent-color);
 }
 /* ------------------------------footer--------------------------- */
 .footer {
