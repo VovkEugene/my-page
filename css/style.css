@@ -2,6 +2,7 @@
   --accent-color: #1bff07;
   --text-color: #fff;
   --background-color: #000;
+  --background-color2: #191c19;
 }
 html {
   scroll-behavior: smooth;
@@ -242,6 +243,52 @@ body {
 }
 .item-competences__text {
   width: 778px;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+/* ------------------------------helper--------------------------- */
+.helper {
+}
+.helper__container {
+}
+.helper__title {
+  width: 404px;
+  font-size: 35px;
+  line-height: normal;
+  letter-spacing: -1.05px;
+}
+.title {
+}
+.helper__list {
+}
+.helper__item {
+}
+.item-helper {
+}
+.item-helper:not(:last-child) {
+  margin-bottom: 74px;
+}
+.item-helper:nth-child(2) {
+  margin-bottom: 134px;
+}
+.item-helper__image img {
+  width: 100%;
+}
+.item-helper__body {
+  padding: 40px 40px 69px;
+  border-radius: 30px;
+  background-color: var(--background-color2);
+}
+.item-helper__title {
+  margin-bottom: 15px;
+  color: var(--accent-color);
+  font-size: 55px;
+  line-height: normal;
+  letter-spacing: -1.65px;
+}
+.item-helper__text {
+  width: 749px;
   font-size: 22px;
   line-height: normal;
   letter-spacing: -0.66px;
