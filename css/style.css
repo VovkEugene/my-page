@@ -338,4 +338,23 @@ body {
 }
 /* ------------------------------footer--------------------------- */
 .footer {
+  font-family: Manrope;
+  color: var(--background-color);
+}
+.container {
+  padding: 76px 125px 90px;
+  border-radius: 30px;
+  background-color: var(--text-color);
+}
+.footer__title {
+  margin-bottom: 66px;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+.footer__subtitle {
+  opacity: 0.5;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.6px;
 }
